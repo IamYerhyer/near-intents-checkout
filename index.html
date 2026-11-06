@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northgate Supply (Demo Store) — NEAR Intents Universal Checkout</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; font:16px/1.55 system-ui, sans-serif; background:#0a120d; color:#e9f5ee; }
+  header { padding:34px 20px 8px; max-width:920px; margin:0 auto; }
+  h1 { margin:0 0 6px; font-size:30px; }
+  .tag { color:#9db8a9; margin:0 0 8px; }
+  .banner { background:#12241a; border:1px solid #24513a; color:#bfe6cf; border-radius:10px; padding:12px 16px; max-width:920px; margin:14px auto; width:calc(100% - 40px); box-sizing:border-box; font-size:14px; }
+  main { max-width:920px; margin:0 auto; padding:10px 20px 30px; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+  .card { background:#0d1512; border:1px solid #1d2b23; border-radius:14px; padding:18px; }
+  .card h3 { margin:0 0 4px; font-size:18px; }
+  .card p { color:#9db8a9; font-size:14px; margin:0 0 10px; }
+  .price { font-size:22px; font-weight:700; margin:0 0 12px; }
+  footer { max-width:920px; margin:0 auto; padding:0 20px 40px; color:#72907d; font-size:13px; }
+  a { color:#00ec97; }
+  code { background:#132019; padding:1px 5px; border-radius:5px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Northgate Supply — demo store</h1>
+  <p class="tag">A fictional shop showing the NEAR Intents Universal Checkout widget. Every price below can be paid with 200+ assets across 39 chains; the shop settles only in USDC on NEAR.</p>
+</header>
+
+<div class="banner">
+  <b>Live prototype:</b> asset prices and payment quotes on this page are fetched live from the NEAR Intents
+  1Click API right now, in your browser, with no API key. The final deposit-address step needs the merchant's
+  1Click JWT, so this demo stops at the verified quote — no funds move. See the
+  <a href="https://github.com/IamYerhyer/near-intents-checkout">README</a> for exactly what is live and what is stubbed, and why.
+</div>
+
+<main>
+  <div class="card">
+    <h3>Adire cotton throw</h3>
+    <p>Hand-dyed in Osogbo, 130 × 200 cm.</p>
+    <p class="price">$12.00</p>
+    <div class="near-checkout" data-merchant="iamyerhyer.near" data-amount-usd="12" data-item="Adire cotton throw"></div>
+  </div>
+  <div class="card">
+    <h3>Vinyl LP — Lagos highlife classics</h3>
+    <p>Remastered pressing, 180 g.</p>
+    <p class="price">$25.00</p>
+    <div class="near-checkout" data-merchant="iamyerhyer.near" data-amount-usd="25" data-item="Vinyl LP — Lagos highlife classics"></div>
+  </div>
+  <div class="card">
+    <h3>Bean-to-bar chocolate crate</h3>
+    <p>Six bars, Ondo cocoa, 70%.</p>
+    <p class="price">$49.00</p>
+    <div class="near-checkout" data-merchant="iamyerhyer.near" data-amount-usd="49" data-item="Bean-to-bar chocolate crate"></div>
+  </div>
+</main>
+
+<footer>
+  <p><b>For merchants:</b> adding this checkout to any page is one script tag and one div —
+  <code>&lt;div class="near-checkout" data-merchant="yourstore.near" data-amount-usd="25"&gt;&lt;/div&gt;</code> —
+  full instructions in the README. Settlement account on this demo: <code>iamyerhyer.near</code>.</p>
+  <p>Built for the NEAR Hackathon 2026 (Business track) — one of two entries by the same author; the other is the
+  <a href="https://github.com/IamYerhyer/near-intents-signal">NEAR Intents investment-thesis dashboard</a>.</p>
+</footer>
+
+<script src="widget.js"></script>
+</body>
+</html>
