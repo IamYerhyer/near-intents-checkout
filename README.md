@@ -2,7 +2,7 @@
 
 **One checkout button. The buyer pays with whatever they hold, on whatever chain they hold it. The merchant settles in one asset on NEAR.**
 
-Built during the **NEAR Hackathon 2026** — a working prototype, **not a submitted entry**. The author's two submitted entries are the Investment Thesis, [near-intents-signal](https://github.com/IamYerhyer/near-intents-signal), and [nearnaira](https://github.com/IamYerhyer/nearnaira) (NearNaira, Real-World Money track).
+Built during the **NEAR Hackathon 2026** — a working prototype, **not a submitted entry**. The author's two submitted entries are the Investment Thesis, [near-intents-signal](https://github.com/IamYerhyer/near-intents-signal), and [near2cash](https://github.com/IamYerhyer/near2cash) (Near2Cash, Real-World Money track).
 
 The idea is one of the four NEAR co-founder Illia Polosukhin publicly said he would love to see built with NEAR Intents ([post](https://x.com/ilblackdragon/status/2118027843980366222), 4 Nov 2026): *"Universal checkout widget: any merchant/app can add a 'checkout' button that enables paying with Intents from whatever wallet and blockchain that user has."*
 
